@@ -46,7 +46,7 @@ abstract class Vehicle
 
 // Bike.php
 
-class Bike extends Vehicle
+final class Bike extends Vehicle
 {
     protected $color;
 
@@ -64,7 +64,7 @@ class Bike extends Vehicle
 
 // Skateboard.php
 
-class Skateboard extends Vehicle
+final class Skateboard extends Vehicle
 {
     protected $color;
     
@@ -82,7 +82,7 @@ class Skateboard extends Vehicle
 
 // Cars.php
 
-class Car extends Vehicle
+final class Car extends Vehicle
 {
     protected $color;
     
