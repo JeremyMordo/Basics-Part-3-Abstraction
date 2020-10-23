@@ -10,7 +10,12 @@ abstract class Vehicle
 
     protected $nbWheels;
 
-    abstract public function __construct();
+    public function __construct($color, $nbSeats, $nbWheels)
+    {
+        $this->color=$color;
+        $this->nbSeats=$nbSeats;
+        $this->nbWheels=$nbWheels;
+    }
 
     public function getColor(): string
     {
@@ -54,11 +59,9 @@ final class Bike extends Vehicle
     
     protected $nbWheels;
 
-    public function __construct()
+    public function __construct($color, $nbSeats, $nbWheels)
     {
-        $this->color = $color;
-        $this->nbSeats = $nbSeats;
-        $this->nbWheels = $nbWheels;
+        parent:: __construct($color, $nbSeats, $nbWheels);
     }
 }
 
@@ -72,11 +75,9 @@ final class Skateboard extends Vehicle
     
     protected $nbWheels;
 
-    public function __construct()
+    public function __construct($color, $nbSeats, $nbWheels)
     {
-        $this->color = $color;
-        $this->nbSeats = $nbSeats;
-        $this->nbWheels = $nbWheels;
+        parent:: __construct($color, $nbSeats, $nbWheels);
     }
 }
 
@@ -90,10 +91,8 @@ final class Car extends Vehicle
 
     protected $nbSeats;
 
-    public function __construct()
+    public function __construct($color, $nbSeats, $nbWheels)
     {
-        $this->color = $color;
-        $this->nbSeats = $nbSeats;
-        $this->nbWheels = $nbWheels;
+        parent:: __construct($color, $nbSeats, $nbWheels);
     }
 }
