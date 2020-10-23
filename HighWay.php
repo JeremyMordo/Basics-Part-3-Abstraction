@@ -78,9 +78,6 @@ final class MotorWay extends HighWay
 
 final class PedestrianWay extends HighWay
 {
-    private $nbLane = 1;
-    private $maxSpeed = 10;
-    
     public function __construct($nbLane, $maxSpeed)
     {
         parent:: __construct($nbLane, $maxSpeed);
@@ -103,9 +100,6 @@ final class PedestrianWay extends HighWay
 
 final class ResidentialWay extends HighWay
 {
-    private $nbLane = 2;
-    private $maxSpeed = 50;
-
     public function __construct($nbLane, $maxSpeed)
     {
         parent:: __construct($nbLane, $maxSpeed);
