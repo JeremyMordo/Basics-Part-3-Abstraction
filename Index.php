@@ -3,9 +3,9 @@
 require 'Vehicle.php';
 require 'HighWay.php';
 
-$MotorWay = new MotorWay();
-$PedestrianWay = new PedestrianWay();
-$ResidentialWay = new ResidentialWay();
+$MotorWay = new MotorWay(4, 130);
+$PedestrianWay = new PedestrianWay(1, 10);
+$ResidentialWay = new ResidentialWay(2, 50);
 
 $Car = new Car('red', 2, 1);
 $Bike = new Bike ('blue', 3, 1);
