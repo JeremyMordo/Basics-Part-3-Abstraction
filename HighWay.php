@@ -55,9 +55,9 @@ abstract class HighWay
 
 final class MotorWay extends HighWay
 {
-    public function __construct()
+    public function __construct($nbLane, $maxSpeed)
     {
-        parent::__construct(4, 130);
+        parent:: __construct($nbLane, $maxSpeed);
     }
 
     public function addVehicle($Vehicle)
@@ -81,9 +81,9 @@ final class PedestrianWay extends HighWay
     private $nbLane = 1;
     private $maxSpeed = 10;
     
-    public function __construct()
+    public function __construct($nbLane, $maxSpeed)
     {
-        parent::__construct(1, 10);
+        parent:: __construct($nbLane, $maxSpeed);
     }
 
     public function addVehicle($Vehicle)
@@ -106,9 +106,9 @@ final class ResidentialWay extends HighWay
     private $nbLane = 2;
     private $maxSpeed = 50;
 
-    public function __construct()
+    public function __construct($nbLane, $maxSpeed)
     {
-        parent::__construct(2, 50);
+        parent:: __construct($nbLane, $maxSpeed);
     }
 
     public function addVehicle($Vehicle)
